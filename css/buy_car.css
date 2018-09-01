@@ -1,0 +1,524 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "微软雅黑";
+  text-decoration: none;
+  list-style: none; }
+
+.shadow {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  position: absolute; }
+  .shadow:hover {
+    box-shadow: #ccc 0px 0px 50px 1px inset; }
+
+body {
+  background: #f5f5f5; }
+
+.clear-fix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+#top_connect, #buy_car, #connect, #foot #foot_connect {
+  margin: 0 auto;
+  width: 1220px;
+  overflow: hidden; }
+
+.top_li {
+  float: left;
+  list-style: none;
+  line-height: 100px;
+  padding: 0 22px; }
+  .top_li a {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 14px; }
+    .top_li a:hover {
+      color: #ededed; }
+
+#top {
+  height: 100px;
+  background: #080808;
+  border-bottom: 1px solid #8f8f8f; }
+  #top #logo {
+    float: left;
+    padding-top: 25px; }
+  #top ul {
+    float: left;
+    margin-left: 100px; }
+    #top ul .active {
+      color: #fff; }
+  #top #top_right li {
+    float: right;
+    margin-top: 38px;
+    padding: 0 12px; }
+    #top #top_right li a {
+      color: #989898;
+      font-size: 18px; }
+      #top #top_right li a:hover {
+        color: #ededed; }
+
+#buy_car {
+  border-radius: 10px;
+  border: 1px solid #d3d3d3;
+  overflow: hidden;
+  margin-top: 30px; }
+  #buy_car #buy_car_title {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-left: 24px;
+    background: -webkit-linear-gradient(#fefefe, #f8f8f8);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#fefefe, #f8f8f8);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#fefefe, #f8f8f8);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#fefefe, #f8f8f8);
+    /* 标准的语法 */ }
+    #buy_car #buy_car_title p {
+      font-size: 18px;
+      color: #31331d; }
+  #buy_car #buy_car_box {
+    background: #fff url(../images/buy_car_03.jpg) no-repeat center 50px;
+    height: 167px;
+    padding-top: 360px;
+    display: none; }
+    #buy_car #buy_car_box .buy_car_con {
+      width: 389px;
+      height: 126px;
+      text-align: center;
+      margin: 0 auto; }
+      #buy_car #buy_car_box .buy_car_con p {
+        text-align: center;
+        color: #998b9c;
+        margin-bottom: 20px; }
+      #buy_car #buy_car_box .buy_car_con .icon {
+        width: 142px;
+        height: 48px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 48px;
+        display: inline-block;
+        cursor: pointer; }
+      #buy_car #buy_car_box .buy_car_con #login {
+        background: #5b81e2;
+        color: #fff; }
+  #buy_car #buy_car_goods {
+    display: none; }
+    #buy_car #buy_car_goods .buy_car_goods_tit {
+      background: #eeeeee;
+      height: 38px; }
+      #buy_car #buy_car_goods .buy_car_goods_tit li {
+        float: left;
+        color: #838383;
+        text-align: center;
+        line-height: 38px; }
+      #buy_car #buy_car_goods .buy_car_goods_tit .mesg {
+        width: 658px;
+        text-align: left;
+        padding-left: 30px; }
+      #buy_car #buy_car_goods .buy_car_goods_tit .price {
+        width: 113px; }
+      #buy_car #buy_car_goods .buy_car_goods_tit .num {
+        width: 154px; }
+      #buy_car #buy_car_goods .buy_car_goods_tit .all {
+        width: 124px; }
+      #buy_car #buy_car_goods .buy_car_goods_tit .remove {
+        width: 140px; }
+    #buy_car #buy_car_goods .buy_car_goods_box {
+      background: #fff; }
+      #buy_car #buy_car_goods .buy_car_goods_box li {
+        float: left; }
+      #buy_car #buy_car_goods .buy_car_goods_box .goods_icon {
+        background: #fff;
+        line-height: 150px;
+        padding-left: 30px; }
+        #buy_car #buy_car_goods .buy_car_goods_box .goods_icon .active_yes {
+          background: url(../images/yes_blue_05.jpg) no-repeat;
+          background-size: cover; }
+        #buy_car #buy_car_goods .buy_car_goods_box .goods_icon .goods_icon_con {
+          width: 25px;
+          height: 25px;
+          border: 2px solid #f1f1f1;
+          border-radius: 50%;
+          display: inline-block;
+          cursor: pointer; }
+      #buy_car #buy_car_goods .buy_car_goods_box .goods_con {
+        background: #fff; }
+        #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul li {
+          float: left;
+          display: inline-block; }
+        #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .goods_pic {
+          width: 80px;
+          height: 80px;
+          margin-top: 28px;
+          margin-left: 20px;
+          margin-right: 20px;
+          border: 1px solid #f1f1f1;
+          border-radius: 5px;
+          overflow: hidden; }
+          #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .goods_pic img {
+            width: 100%;
+            display: inline-block; }
+        #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .goods_name {
+          margin-top: 50px;
+          width: 510px; }
+          #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .goods_name .name {
+            font-size: 16px;
+            color: #333333; }
+          #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .goods_name .color {
+            color: #999; }
+        #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .price {
+          line-height: 150px;
+          width: 113px;
+          text-align: center;
+          font-size: 14px; }
+        #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .num {
+          width: 154px;
+          line-height: 150px;
+          text-align: center; }
+          #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .num .min, #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .num .add {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            background: #fefefe;
+            border-radius: 50%;
+            color: #666;
+            border: 1px solid #f1f1f1;
+            box-shadow: 1px 1px 10px #f1f1f1;
+            cursor: pointer; }
+          #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .num .num_span {
+            display: inline-block;
+            padding: 0 20px;
+            font-size: 14px; }
+        #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .all_price {
+          width: 124px;
+          line-height: 150px;
+          text-align: center;
+          font-weight: 700; }
+        #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .remove_con {
+          width: 135px;
+          line-height: 150px;
+          text-align: center; }
+          #buy_car #buy_car_goods .buy_car_goods_box .goods_con ul .remove_con .XxX {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            background: #fefefe;
+            border-radius: 50%;
+            color: #666;
+            border: 1px solid #f1f1f1;
+            box-shadow: 1px 1px 10px #f1f1f1;
+            cursor: pointer; }
+    #buy_car #buy_car_goods .last_buy_box {
+      background: #fff;
+      position: relative;
+      height: 80px;
+      border-top: 1px solid #d9d9d9;
+      box-shadow: 1px 1px 10px #d9d9d9;
+      line-height: 80px; }
+      #buy_car #buy_car_goods .last_buy_box li {
+        float: left; }
+      #buy_car #buy_car_goods .last_buy_box div {
+        display: inline-block; }
+      #buy_car #buy_car_goods .last_buy_box .last_goods_icon {
+        background: #fff;
+        padding-left: 30px; }
+        #buy_car #buy_car_goods .last_buy_box .last_goods_icon div {
+          cursor: pointer; }
+        #buy_car #buy_car_goods .last_buy_box .last_goods_icon .last_goods_icon_con {
+          width: 25px;
+          height: 25px;
+          border: 2px solid #f1f1f1;
+          border-radius: 50%; }
+        #buy_car #buy_car_goods .last_buy_box .last_goods_icon .all {
+          color: #666;
+          padding-right: 10px;
+          margin-left: 10px; }
+        #buy_car #buy_car_goods .last_buy_box .last_goods_icon .portion {
+          color: #bbb;
+          padding-left: 10px; }
+      #buy_car #buy_car_goods .last_buy_box .last_goods_box {
+        height: 60px;
+        line-height: 60px;
+        float: right; }
+        #buy_car #buy_car_goods .last_buy_box .last_goods_box .all_num {
+          line-height: 12px;
+          padding-top: 20px;
+          margin-right: 20px; }
+          #buy_car #buy_car_goods .last_buy_box .last_goods_box .all_num span {
+            color: #d44d44;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 0 5px; }
+          #buy_car #buy_car_goods .last_buy_box .last_goods_box .all_num p:last-child {
+            color: #959595; }
+        #buy_car #buy_car_goods .last_buy_box .last_goods_box .all_price {
+          line-height: 12px;
+          padding-top: 20px;
+          margin-left: 20px;
+          margin-right: 160px; }
+          #buy_car #buy_car_goods .last_buy_box .last_goods_box .all_price span {
+            color: #d44d44;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 0 5px; }
+          #buy_car #buy_car_goods .last_buy_box .last_goods_box .all_price p:last-child {
+            color: #959595; }
+        #buy_car #buy_car_goods .last_buy_box .last_goods_box .buy_car_btn {
+          width: 130px;
+          height: 50px;
+          text-align: center;
+          border-radius: 10px;
+          line-height: 50px;
+          position: absolute;
+          right: 20px;
+          top: 15px;
+          color: #fff;
+          background: #7397e9;
+          cursor: pointer; }
+
+#connect {
+  border-radius: 10px;
+  border: 1px solid #d3d3d3;
+  overflow: hidden;
+  margin-top: 30px; }
+  #connect #connect_title {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #d3d3d3;
+    padding-left: 24px;
+    background: -webkit-linear-gradient(#fefefe, #f8f8f8);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#fefefe, #f8f8f8);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#fefefe, #f8f8f8);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#fefefe, #f8f8f8);
+    /* 标准的语法 */ }
+    #connect #connect_title p {
+      font-size: 18px;
+      color: #31331d; }
+  #connect #connect_box {
+    width: 1250px;
+    min-height: 400px;
+    background: #fff;
+    border: 1px solid #dadada; }
+    #connect #connect_box a {
+      display: inline-block; }
+      #connect #connect_box a:hover {
+        box-shadow: #e2e2e2 0px 0px 30px 1px inset; }
+      #connect #connect_box a .parts_box_connect {
+        width: 304px;
+        height: 382px;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        float: left;
+        padding: 25px 0 20px;
+        text-align: center;
+        position: relative; }
+        #connect #connect_box a .parts_box_connect .parts_box_connect_img {
+          display: block;
+          width: 216px;
+          height: 216px;
+          margin: 0 auto; }
+        #connect #connect_box a .parts_box_connect .parts_box_connect_h4 {
+          color: #333;
+          font-weight: 700;
+          margin: 0 8px;
+          margin-top: 20px; }
+          #connect #connect_box a .parts_box_connect .parts_box_connect_h4 h4 {
+            font-size: 14px;
+            line-height: 1.2; }
+        #connect #connect_box a .parts_box_connect .parts_box_connect_h6 {
+          overflow: hidden;
+          padding-top: 15px;
+          font-size: 12px;
+          line-height: 12px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: #999; }
+        #connect #connect_box a .parts_box_connect .parts_box_connect_icon {
+          text-align: center;
+          margin-top: 16px; }
+          #connect #connect_box a .parts_box_connect .parts_box_connect_icon .parts_box_connect_btn {
+            width: 14px;
+            height: 14px;
+            margin: 0 2px;
+            border-radius: 50%;
+            border: 2px solid #ebebeb;
+            display: inline-block;
+            position: relative; }
+            #connect #connect_box a .parts_box_connect .parts_box_connect_icon .parts_box_connect_btn .parts_box_connect_in {
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              top: 2px;
+              left: 2px;
+              border-radius: 50%; }
+          #connect #connect_box a .parts_box_connect .parts_box_connect_icon .active {
+            border: 2px solid #a3a2a2; }
+        #connect #connect_box a .parts_box_connect .price {
+          margin-top: 18px; }
+          #connect #connect_box a .parts_box_connect .price .discount-price {
+            display: inline-block;
+            color: #ce524a; }
+            #connect #connect_box a .parts_box_connect .price .discount-price span {
+              font-size: 18px;
+              font-weight: 800; }
+          #connect #connect_box a .parts_box_connect .price .buy_car {
+            width: 100px;
+            height: 30px;
+            background: #6891e2;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            border-radius: 5px; }
+          #connect #connect_box a .parts_box_connect .price .original-price {
+            display: inline-block;
+            color: #cdcdcd;
+            text-decoration: line-through; }
+          #connect #connect_box a .parts_box_connect .price .price_icon {
+            display: inline-block;
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            border: 1px solid #eaeaea;
+            color: #878787; }
+
+#foot {
+  height: 352px;
+  background: #fafafa;
+  margin-top: 60px; }
+  #foot #foot_connect {
+    overflow: inherit;
+    padding-top: 100px; }
+    #foot #foot_connect .foot_top {
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 26px; }
+      #foot #foot_connect .foot_top .foot_list {
+        float: left; }
+        #foot #foot_connect .foot_top .foot_list .foot_list_li {
+          float: left;
+          width: 150px; }
+          #foot #foot_connect .foot_top .foot_list .foot_list_li h3 {
+            color: #626671;
+            font-weight: 100;
+            margin-bottom: 20px; }
+          #foot #foot_connect .foot_top .foot_list .foot_list_li ul li {
+            margin-bottom: 15px; }
+            #foot #foot_connect .foot_top .foot_list .foot_list_li ul li a {
+              color: #939891;
+              line-height: 1; }
+              #foot #foot_connect .foot_top .foot_list .foot_list_li ul li a:hover {
+                color: #497bdc; }
+      #foot #foot_connect .foot_top .foot_tel ul .tel {
+        font-size: 30px;
+        float: right;
+        line-height: 30px;
+        margin-bottom: 10px;
+        color: #5f6769; }
+      #foot #foot_connect .foot_top .foot_tel ul .timer {
+        color: #c3c2bd;
+        font-size: 12px;
+        float: right;
+        line-height: 12px;
+        margin-bottom: 12px; }
+      #foot #foot_connect .foot_top .foot_tel ul .help {
+        float: right;
+        width: 102px;
+        height: 32px;
+        line-height: 32px;
+        background: linear-gradient(#fcfcfc, #f5f5f5);
+        cursor: pointer;
+        font-size: 14px;
+        padding: 0 0 0 26px;
+        margin-top: 8px;
+        text-align: left;
+        color: #5079d9;
+        border: 1px solid #dcdcdc;
+        border-radius: 5px; }
+        #foot #foot_connect .foot_top .foot_tel ul .help span {
+          font-size: 16px; }
+        #foot #foot_connect .foot_top .foot_tel ul .help span:last-child {
+          margin-left: 6px; }
+    #foot #foot_connect .foot_bottom {
+      position: relative; }
+      #foot #foot_connect .foot_bottom .language {
+        position: absolute;
+        width: 118px;
+        height: 104px;
+        background: #f5f5f5;
+        border-radius: 10px;
+        border: 1px solid #d6d6d6;
+        overflow: hidden;
+        box-shadow: 0 0 10px #d6d6d6;
+        right: -20px;
+        top: -56px;
+        display: none; }
+        #foot #foot_connect .foot_bottom .language .english {
+          width: 118px;
+          height: 52px;
+          border-bottom: 1px solid #ebebeb;
+          display: inline-block;
+          background: white;
+          text-align: center;
+          line-height: 52px;
+          color: #666666; }
+        #foot #foot_connect .foot_bottom .language span {
+          margin-left: 8px; }
+      #foot #foot_connect .foot_bottom .language_btn {
+        display: inline-block;
+        width: 118px;
+        height: 52px;
+        position: absolute;
+        top: -3px;
+        right: -20px;
+        line-height: 52px;
+        text-align: center;
+        color: #666666; }
+        #foot #foot_connect .foot_bottom .language_btn img {
+          padding-top: 3px; }
+        #foot #foot_connect .foot_bottom .language_btn span {
+          margin-left: 8px; }
+          #foot #foot_connect .foot_bottom .language_btn span img {
+            display: inline-block;
+            margin-bottom: 3px; }
+      #foot #foot_connect .foot_bottom .foot_bottom_left {
+        float: left;
+        padding-top: 40px; }
+        #foot #foot_connect .foot_bottom .foot_bottom_left .num {
+          margin-bottom: 24px; }
+          #foot #foot_connect .foot_bottom .foot_bottom_left .num span {
+            float: left;
+            color: #6c7a61; }
+          #foot #foot_connect .foot_bottom .foot_bottom_left .num ul {
+            margin-left: 12px;
+            float: left; }
+            #foot #foot_connect .foot_bottom .foot_bottom_left .num ul .foot_list {
+              float: left;
+              padding: 0 12px;
+              border-left: 1px solid #c6c6c6; }
+              #foot #foot_connect .foot_bottom .foot_bottom_left .num ul .foot_list a {
+                color: #567ad2; }
+        #foot #foot_connect .foot_bottom .foot_bottom_left .num_1 a span {
+          color: #adadad;
+          margin-right: 22px; }
